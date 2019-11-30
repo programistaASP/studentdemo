@@ -5,6 +5,7 @@
     <title>Student form</title>
 </head>
 <body>
+<th:block th:replace="fragments :: navigator"/>
 <h1>Student Form</h1>
 <form action="/student/add" method="post" th:object="${student}">
     <input type="hidden" th:field="*{id}"/>
